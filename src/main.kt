@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     println(greet)
 
     var myScn = readLine()
-
+fun readLine() = double?
     when (myScn) {
         "Addition","+" -> {
             println("Let's do some addition!")
