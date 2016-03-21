@@ -9,10 +9,12 @@ fun readLine() = double?
         "Addition","+" -> {
             println("Let's do some addition!")
             println("\nFirst Number?")
-            var ScnPlus = readLine()
+            var plus0_raw = readLine()
             println("Second number?")
-            var ScnPlus2 = readLine()
-            var addanswer = ScnPlus + ScnPlus2
+            var plus1_raw = readLine()
+            val plus0 = plus0_raw.toLong()
+            val plus1 = plus1_raw.toLong()
+            val addanswer = plus0 + plus1
             println(addanswer)
         }
         "Subtraction" -> {
