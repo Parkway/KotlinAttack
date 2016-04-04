@@ -1,12 +1,10 @@
-fun rec(//normalizeCase: Boolean = true,
-      //  upperCaseFirstLetter: Boolean = true
-        ) {
+fun rec() {
     var greet = "Hello there. What would you like to do? \n"
     var roundx = "Addition \nSubtraction \nMultiplication \nDivision"
     println(greet + roundx)
     var myScn = readLine()?.toLowerCase()
 
-    loop@when (myScn) {
+    when (myScn) {
         "addition", "+" -> {
             println("Let's do some addition!")
             println("\nFirst Number?")
@@ -70,8 +68,8 @@ fun rec(//normalizeCase: Boolean = true,
         }
     }
     println("\nWould you like to do another?")
-        var io = readLine()
-        if (io == "yes" || io == "Yes")
+        var io = readLine()!!.toLowerCase()
+        if (io == "yes")
             rec()
         else
             println("\nHave a nice day.")
